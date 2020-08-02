@@ -3,22 +3,26 @@
 [![Latest Stable Version](https://poser.pugx.org/rteeom/isoflags/v/stable)](https://packagist.org/packages/rteeom/isoflags) 
 [![Total Downloads](https://poser.pugx.org/rteeom/isoflags/downloads)](https://packagist.org/packages/rteeom/isoflags) 
 
-library for generating emoji flags from iso country codes
+Symfony bundle providing service `FlagsGenerator` for getting emoji flags from iso country codes
 
 ### install:
 `
-composer require rteeom/isoflags
+composer require mainstreamer/emojiisoflags-bundle
 `
 
 ### usage:
-``` 
-require 'vendor/autoload.php';
+```
+use Symfony\Component\HttpFoundation\Response;
+use Rteeom\EmojiISOFlagsBundle\Service\FlagsGenerator;
 
-$generator = new \Rteeom\FlagsGenerator();
+class MyController 
+{ 
+ public function someAction(FlagsGenerator $generator): Response
+    {
+        $flag = $generator->getEmojiFlag('gb');
 
-echo $generator->getEmojiFlag('ua'); // 🇺🇦
+        return new Responce($flag);
+    }
+}
 
-// or 
-
-echo $generator->getEmojiFlagOrNull('ua'); // 🇺🇦
 ```
