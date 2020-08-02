@@ -1,7 +1,7 @@
 # isoflags
-[![License](https://poser.pugx.org/rteeom/isoflags/license)](https://packagist.org/packages/rteeom/isoflags) 
-[![Latest Stable Version](https://poser.pugx.org/rteeom/isoflags/v/stable)](https://packagist.org/packages/rteeom/isoflags) 
-[![Total Downloads](https://poser.pugx.org/rteeom/isoflags/downloads)](https://packagist.org/packages/rteeom/isoflags) 
+[![License](https://poser.pugx.org/mainstreamer/emojiisoflags/license)](https://packagist.org/packages/mainstreamer/emojiisoflags) 
+[![Latest Stable Version](https://poser.pugx.org/mainstreamer/emojiisoflags/v/stable)](https://packagist.org/packages/mainstreamer/emojiisoflags) 
+[![Total Downloads](https://poser.pugx.org/mainstreamer/emojiisoflags/downloads)](https://packagist.org/packages/mainstreamer/emojiisoflags) 
 
 Symfony bundle providing service `FlagsGenerator` for getting emoji flags from iso country codes
 
@@ -21,7 +21,7 @@ class MyController
     {
         $flag = $generator->getEmojiFlag('gb');
 
-        return new Responce($flag);
+        return new Response($flag);
     }
 }
 
