@@ -1,0 +1,24 @@
+{
+    "name": "mainstreamer/isoflags",
+    "description": "library for easy emoji flags generation from iso country codes",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem",
+            "email": "artem.kyiv@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "symfony/http-kernel": "^4.4",
+        "symfony/config": "^4.4",
+        "symfony/dependency-injection": "^4.4",
+        "rteeom/isoflags": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rteeom\\EmojiISOFlagsBundle\\": "src/"
+        }
+    }
+}
