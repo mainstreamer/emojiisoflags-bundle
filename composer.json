@@ -1,5 +1,5 @@
 {
-    "name": "mainstreamer/emojiisoflags-bundle",
+    "name": "rteeom/emojiisoflags-bundle",
     "description": "library for easy emoji flags generation from iso country codes",
     "type": "symfony-bundle",
     "license": "MIT",
